@@ -23,4 +23,4 @@ locale-gen
 # 追加の環境変数を設定
 sed -i "2iexport LANG=ja_JP.UTF-8" ~/.profile
 # fishの起動
-echo "exec fish" >> ~/.bashrc
+#echo "exec fish" >> ~/.bashrc
