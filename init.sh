@@ -3,10 +3,10 @@
 cd ~
 
 apt-get update
-apt-get install -y fish locales
+apt-get install -y fish locales nano
 
 # fisherでoh-my-fishをインストール
-# fisher installがttyがない場合は標準入力を待つようなので、インストール対象をパイプで渡す。
+# ttyがない場合はfisher installは標準入力を待つようなので、インストール対象をパイプで渡す。
 fish -c "curl -sL https://git.io/fisher | source && echo \"oh-my-fish/theme-bobthefish\" | fisher install"
 
 # oh-my-fishの表示に必要なpowerlineのフォントをインストール
