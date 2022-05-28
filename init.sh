@@ -7,7 +7,7 @@ apt-get install -y fish locales nano
 
 # fisherでoh-my-fishをインストール
 # ttyがない場合はfisher installは標準入力を待つようなので、インストール対象をパイプで渡す。
-fish -c "curl -sL https://git.io/fisher | source && echo \"oh-my-fish/theme-bobthefish\" | fisher install"
+fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && echo \"oh-my-fish/theme-bobthefish\" | fisher install"
 
 # oh-my-fishの表示に必要なpowerlineのフォントをインストール
 wget https://github.com/yuru7/HackGen/releases/download/v2.3.5/HackGenNerd_v2.3.5.zip -O HackGenNerd.zip
