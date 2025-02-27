@@ -2,8 +2,8 @@
 
 cd ~
 
-echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/3/Debian_10/ /' | tee /etc/apt/sources.list.d/shells:fish:release:3.list
-curl -fsSL https://download.opensuse.org/repositories/shells:fish:release:3/Debian_10/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/shells_fish_release_3.gpg > /dev/null
+echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/3/Debian_11/ /' | tee /etc/apt/sources.list.d/shells:fish:release:3.list
+curl -fsSL https://download.opensuse.org/repositories/shells:fish:release:3/Debian_11/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/shells_fish_release_3.gpg > /dev/null
 apt-get update
 apt-get install -y fish locales nano
 
@@ -12,10 +12,10 @@ apt-get install -y fish locales nano
 fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && echo \"oh-my-fish/theme-bobthefish\" | fisher install"
 
 # oh-my-fishの表示に必要なpowerlineのフォントをインストール
-wget https://github.com/yuru7/HackGen/releases/download/v2.3.5/HackGenNerd_v2.3.5.zip -O HackGenNerd.zip
-unzip HackGenNerd.zip
-rm HackGenNerd.zip
-mv ./HackGenNerd*/ /usr/local/share/fonts/HackGenNerd
+wget https://github.com/yuru7/HackGen/releases/download/v2.10.0/HackGen_NF_v2.10.0.zip -O HackGen_NF.zip
+unzip HackGen_NF.zip
+rm Hac`kGen_NF.zip
+mv ./HackGen_NF*/ /usr/local/share/fonts/HackGen_NF
 fc-cache -fv
 
 # 日本語のlocaleを作成
