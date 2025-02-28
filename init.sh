@@ -14,7 +14,7 @@ fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/fun
 # oh-my-fishの表示に必要なpowerlineのフォントをインストール
 wget https://github.com/yuru7/HackGen/releases/download/v2.10.0/HackGen_NF_v2.10.0.zip -O HackGen_NF.zip
 unzip HackGen_NF.zip
-rm Hac`kGen_NF.zip
+rm HackGen_NF.zip
 mv ./HackGen_NF*/ /usr/local/share/fonts/HackGen_NF
 fc-cache -fv
 
